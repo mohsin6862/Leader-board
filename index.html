@@ -1,12 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader Board</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Leader Board</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue: '#562EFF',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
+
+    <header>
+        <nav class="bg-blue h-20 fixed right-0 left-0 top-0" >
+            <div class="flex w-full max-w-6xl justify-between items-center mx-auto">
+                <div class="flex gap-3 p-3 justify-start items-center">
+                    <img class="w-18 h-16" src="images/icons/logo.png" alt="">
+                    <h1 class="text-white text-4xl font-bold ">Idea</h1>
+                </div>
+                <div>
+                    <ul class="flex gap-3 p-3 justify-start items-center">
+                        <li class="text-white font-bold">Home</li>
+                        <li class="text-white font-bold">About</li>
+                        <li class="text-white font-bold">Contact</li>
+                        <li class="text-white font-bold"><img src="images/icons/profile.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  
     
 </body>
 </html>
